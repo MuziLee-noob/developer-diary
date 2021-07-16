@@ -226,5 +226,13 @@ list.forEach((item, index) => {
 
 ```
 
+```typescript
+let btn = document.querySelector('#btn') as HTMLButtonElement
 
+btn.addEventListener('click', handleClick)
+
+function handleClick(event: MouseEvent) {
+    console.log(event.target)
+}
+```
 
